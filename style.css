@@ -1,0 +1,103 @@
+/* div {
+  border: solid 2px white;
+} */
+header {
+  display: flex;
+  height: 100px;
+  background-color: rgb(124, 220, 89);
+  justify-content: space-between;
+}
+body {
+  background-color: gray;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+footer {
+  background-color: rgb(97, 97, 97);
+  height: 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.logo {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  transition: all 0.9s linear;
+}
+.dani {
+  padding: 10px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.menu {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+.menu p {
+  padding: 20px;
+  transition: all 0.9s linear;
+}
+.menu p:hover {
+  font-size: 60px;
+  color: black;
+  transform: rotate(360deg);
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.body {
+  flex: 0.5;
+  display: grid;
+  place-content: center;
+}
+.body2 {
+  flex: 0;
+  display: grid;
+  place-content: center;
+}
+.carucel {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+.carucel1 {
+  display: flex;
+  animation: far 30s linear infinite;
+  width: calc(500px * 18);
+}
+.imag1,
+.imag {
+  padding: 20px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  display: grid;
+  place-content: center;
+}
+img {
+  border-radius: 8%;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@keyframes far {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatex(calc(-300px * 9));
+  }
+}
